@@ -1,0 +1,49 @@
+{
+  "name": "@hfr/egg-base",
+  "version": "0.1.1",
+  "description": "base plugin for Egg.js",
+  "eggPlugin": {
+    "name": "base",
+    "optionalDependencies": [
+      "validate",
+      "sequelize"
+    ]
+  },
+  "main": "index.js",
+  "keywords": [
+    "base",
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "dayjs": "^1.7.7"
+  },
+  "devDependencies": {
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "egg-validate": "^2.0.2",
+    "egg-sequelize": "^3.1.5",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.0",
+    "pg": "^7.4.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint ."
+  },
+  "files": [
+    "app",
+    "config",
+    "app.js",
+    "lib"
+  ],
+  "author": "Freedom <furuihe@gmail.com>"
+}
