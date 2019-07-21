@@ -57,7 +57,7 @@ module.exports = {
 
   // 校验url中参数
   validateParams(rules) {
-    const errors = this.app.validator.validate(rules, this.request.params);
+    const errors = this.app.validator.validate(rules, this.params);
     if (errors) {
       throw { status: 400, code: 'BODY_PARAM_INVALID', message: `参数${errors[0].field}不满足要求` };
     }

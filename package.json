@@ -1,6 +1,6 @@
 {
   "name": "@hfr/egg-base",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "base plugin for Egg.js",
   "eggPlugin": {
     "name": "base",
